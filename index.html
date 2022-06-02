@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <script src="jquery-3.6.0.min.js"></script>
+        <title>電卓</title>
+      </head>
+    
+      <body>
+    
+         <table>
+           <tr>
+             <td colspan="4"><input readonly id="result" value="0"></td>
+           </tr>
+           <tr>
+             <th><button onclick="num_click(this.innerHTML)">7</button></th> <!--thisはvalの値と同じ--><!--innerHTMLでHTMLの情報を取得する-->
+             <th><button onclick="num_click(this.innerHTML)">8</button></th>
+             <th><button onclick="num_click(this.innerHTML)">9</button></th>
+             <th><button class="oparater" onclick="ope_click(this.innerHTML)">÷</button></th>
+           </tr>
+           <tr>
+             <td><button onclick="num_click(this.innerHTML)">4</button></td>
+             <td><button onclick="num_click(this.innerHTML)">5</button></td>
+             <td><button onclick="num_click(this.innerHTML)">6</button></td>
+             <td><button class="oparater" onclick="ope_click(this.innerHTML)">×</button></td>
+           </tr>
+           <tr>
+             <td><button onclick="num_click(this.innerHTML)">1</button></td>
+             <td><button onclick="num_click(this.innerHTML)">2</button></td>
+             <td><button onclick="num_click(this.innerHTML)">3</button></td>
+             <td><button class="oparater" onclick="ope_click(this.innerHTML)">-</button></td>
+           </tr>
+           <tr>
+             <td><button onclick="num_click(this.innerHTML)">0</button></td>
+             <td><button class="ac" onclick="c_click()">AC</button></td>
+             <td><button class="oparater" onclick="equal_click()">=</button></td>
+             <td><button class="oparater" onclick="ope_click(this.innerHTML)">+</button></td>
+           </tr>
+         </table>
+    
+      <script src="main.js"></script>
+      </body>
+      </html>
+ 
